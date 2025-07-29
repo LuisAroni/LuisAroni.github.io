@@ -6,7 +6,7 @@ const yesButton = document.querySelector(".btn--yes");
 const noButton = document.querySelector(".btn--no");
 const catImg = document.querySelector(".cat-img");
 
-const MAX_IMAGES = 5;
+const MAX_IMAGES = 10;
 
 let play = true;
 let noCount = 0;
@@ -27,9 +27,9 @@ noButton.addEventListener("click", function () {
 });
 
 function handleYesClick() {
-  titleElement.innerHTML = "Yayyy!! :3";
+  titleElement.innerHTML = "Sabía que dirías que sí ♡!";
   buttonsContainer.classList.add("hidden");
-  changeImage("yes");
+  changeImage("Yes");
 }
 
 function resizeYesButton() {
@@ -43,11 +43,15 @@ function resizeYesButton() {
 function generateMessage(noCount) {
   const messages = [
     "No",
-    "Are you sure?",
-    "Pookie please",
-    "Don't do this to me :(",
-    "You're breaking my heart",
-    "I'm gonna cry...",
+    "No",
+    "No",
+    "No",
+    "No",
+    "No",
+    "No",
+    "No",
+    "No",
+    "No",
   ];
 
   const messageIndex = Math.min(noCount, messages.length - 1);
